@@ -1,0 +1,7 @@
+/es
+/lib
+/node_modules
+/umd
+npm-debug.log*
+.vscode
+.DS_Store
