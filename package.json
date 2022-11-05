@@ -1,7 +1,7 @@
 {
-  "name": "rollup-react-starter-lib-ts",
-  "version": "1.0.4",
-  "description": "Rolllup template for creating your react/typescript library",
+  "name": "react-cyber-elements",
+  "version": "1.0.1",
+  "description": "Free Cyberpunk Elements for React",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
@@ -10,29 +10,35 @@
   ],
   "scripts": {
     "build": "rollup -c",
+    "generate:svgs": "npx @svgr/cli  --out-dir src -- svgs",
     "build:watch": "rollup -c --watch"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^23.0.2",
     "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.1.0",
     "@rollup/plugin-typescript": "^9.0.2",
+    "@svgr/cli": "^6.5.1",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^3.2.3",
     "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tslib": "^2.4.1",
     "typescript": "^4.8.4"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/thiswallz/rollup-react-starter-lib-ts"
+    "url": "https://github.com/thiswallz/react-cyber-elements.git"
   },
   "author": "Mau BJW",
   "license": "MIT",
   "keywords": [
-    "react-template",
+    "react-icons",
+    "react-svgs",
     "react-library",
+    "elements",
     "typescript",
     "react",
     "template"
