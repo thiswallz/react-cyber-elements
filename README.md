@@ -1,90 +1,102 @@
-# rollup-react-starter-lib-ts
+# react-cyber-elemnts
+
+90 Elements.
+
 <p align="center">
-  <a href="https://www.npmjs.com/package/rollup-react-starter-lib-ts">
-    <img src="https://img.shields.io/npm/v/rollup-react-starter-lib-ts.svg" alt="npm version" >
+  <a href="https://www.npmjs.com/package/react-cyber-elements">
+    <img src="https://img.shields.io/npm/v/react-cyber-elements.svg" alt="npm version" >
   </a>
-  <a href="https://packagephobia.now.sh/result?p=rollup-react-starter-lib-ts">
-    <img src="https://packagephobia.now.sh/badge?p=rollup-react-starter-lib-ts" alt="install size" >
+  <a href="https://github.com/thiswallz/react-cyber-elements/blob/main/LICENSE">
+    <img src="https://badgen.net/github/license/thiswallz/react-cyber-elements" alt="license">
   </a>
-  <a href="https://github.com/rollup/rollup/blob/master/LICENSE.md">
-    <img src="https://img.shields.io/npm/l/rollup-react-starter-lib-ts.svg" alt="license">
+ <a href="https://badgen.net/github/checks/thiswallz/react-cyber-elements">
+    <img src="https://badgen.net/github/checks/thiswallz/react-cyber-elements" />
   </a>
+  <a href="https://badgen.net/bundlephobia/dependency-count/react-cyber-elements">
+    <img src="https://badgen.net/bundlephobia/dependency-count/react-cyber-elements" />
+  </a>
+  <a href="https://badgen.net/npm/types/react-cyber-elements">
+    <img src="https://badgen.net/npm/types/react-cyber-elements"  />
+  </a>
+    <a href="https://badgen.net/bundlephobia/tree-shaking/react-cyber-elements">
+    <img src="https://badgen.net/bundlephobia/tree-shaking/react-cyber-elements"  />
+  </a>
+    <a href="https://badgen.net/bundlephobia/minzip/react-cyber-elements">
+    <img src="https://badgen.net/bundlephobia/minzip/react-cyber-elements" />
+  </a>
+
 </p>
-<image width="100px" src="https://rollupjs.org/logo.svg" />
 
-Template to create your own Typescript React library with Rollup.
+<image width="400px" src="ss1.png" />
 
-- Rollup v3 :tada:
-- Compatible with  new and old React versions, generates ESM/CJS files.
+Welcome to react-cyber-elements
+You can change the color of the elements with just css.
 
-## Build & Publish
+Simple usage: <CyberEl1 /> to <CyberEl90 />
+Checkout the docs and sandbox for more info.
 
-You can use this template and
-change the name under package.json.
+## Install
 
-Build
-
-```
-npm run build
-```
-
-Build & Watch
+npm
 
 ```
-npm run build:watch
+npm install react-cyber-elements 
 ```
 
-Publish (public library)
-
-Be sure you are either logged in under `npm login` or you have a token (check https://docs.npmjs.com/creating-and-viewing-access-tokens).
+yarn
 
 ```
-npm run publish --access=public
+yarn add react-cyber-elements 
 ```
 
-## For local testing
+## Usage
 
-cd your-lib-folder/
-
-```
-npm link 
-```
-
-cd your-app/
-
-```
-npm link name-of-your-lib
-```
-
-### Want to also minify bundle output?
-
-You can install rollup-plugin-terser (still works with rollup v3, but since it has no updates, we need to install it with legacy peer options)
-
-```
-npm i rollup-plugin-terser --save-dev --legacy-peer-deps
-```
-
-#### Configure
-
-rollup.config.mjs
+<img src="icon1.png" width="50px"/>
 
 ``` javascript
-import { terser } from 'rollup-plugin-terser';
+import { CyberEl1 } from 'react-cyber-elements'
 
-...
-
- plugins: [
-      peerDepsExternal(),
-      resolve(),
-      commonjs(),
-      typescript({ tsconfig: "./tsconfig.json" }),
-      terser(), // we add it here
- ]
-
-
-
+export default function Home() {
+  return (
+    <CyberEl1 
+      style={{
+        width: '100px',
+        height: '100px'
+      }}
+    className="cyber-icon" />
+  )
+}
 ```
 
+## Changing colors
 
-[npm-badge]: https://img.shields.io/npm/v/rollup-react-starter-lib-ts.svg
-[npm]: https://www.npmjs.org/package/rollup-react-starter-lib-ts
+You can just get access to each path and change stroke and fill properties.
+
+<img src="icon2.png" width="50px"/>
+
+``` css
+
+.cyber-icon path:nth-of-type(1) {
+  fill: #d600ff !important;
+  stroke: orange;
+}
+
+.cyber-icon path:nth-of-type(2) {
+  fill: #00b8ff !important;
+  stroke: orange;
+}
+
+.cyber-icon path:nth-of-type(3) {
+  fill: yellow !important;
+  stroke: orange;
+}
+
+.cyber-icon path:nth-of-type(4) {
+  fill: #001eff !important;
+  stroke: orange;
+}
+
+.cyber-icon path:nth-of-type(5) {
+  fill: #bd00ff !important;
+}
+```
