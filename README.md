@@ -1,4 +1,4 @@
-# react-cyber-elemnts
+# react-cyber-elements
 
 90 Elements.
 
