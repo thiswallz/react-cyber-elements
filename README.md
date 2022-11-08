@@ -1,6 +1,20 @@
 # react-cyber-elements
++90 HUD cyberpunk elements. this is and will always be free.
 
-90 Elements.
+
+We want to create the biggest cyberpunk open-source project for you to make cool things.
+
+Thanks to all for caring!, seems you like the idea of our cyberpunk project, this are our future goals!
+
+### Next steps:
+
+- +1.000 futuristics svg icons components for React, Vue, Svelte and Angular.
+- Add 200 more HUD elements to the currect 90 elements and make them also available to Vue, Svelte and Angular.
+- Wrapper and online storybook to make them easy to search and use in your app.
+- Create a fancy page where we show posibilities with our HUD elements, icons and others!
+- Make fancy assets for everyone (audio/web backgrounds/characters/etc)
+
+
 
 Demo: https://react-cyber-elements-demo.vercel.app/
 
